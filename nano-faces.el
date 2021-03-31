@@ -44,6 +44,13 @@ can be realized (for example) by setting an intense background
 color, typically a shade of red. It must be used scarcely."
   :group 'nano)
 
+(defface nano-face-error nil
+  "Critical face is for information that requires immediate action.
+It should be of high constrast when compared to other faces. This
+can be realized (for example) by setting an intense background
+color, typically a shade of red. It must be used scarcely."
+  :group 'nano)
+
 (defface nano-face-popout nil
   "Popout face is used for information that needs attention.
 To achieve such effect, the hue of the face has to be
@@ -57,6 +64,22 @@ It has to be the same color as the default color and only the
 weight differs by one level (e.g., light/regular or
 regular/bold). IT is generally used for titles, keywords,
 directory, etc."
+  :group 'nano)
+
+(defface nano-face-keyword nil
+  "Keyword face."
+  :group 'nano)
+
+(defface nano-face-divider nil
+  "Divider face."
+  :group 'nano)
+
+(defface nano-face-type nil
+  "Type face."
+  :group 'nano)
+
+(defface nano-face-function nil
+  "Type face."
   :group 'nano)
 
 (defface nano-face-salient nil
@@ -161,8 +184,13 @@ background color that is barely perceptible."
                       :foreground nano-color-foreground
                       :background nano-color-background)
   (set-face-attribute 'nano-face-critical nil
-                      :foreground nano-color-foreground
-                      :background nano-color-critical)
+                      :foreground nano-color-critical
+                      :background nano-color-background
+                      :weight 'bold)
+  (set-face-attribute 'nano-face-error nil
+                      :foreground nano-color-error
+                      :background nano-color-background
+                      :weight 'bold)
   (set-face-attribute 'nano-face-popout nil
                       :foreground nano-color-popout)
 
@@ -178,6 +206,18 @@ background color that is barely perceptible."
   (set-face-attribute 'nano-face-salient nil
                       :foreground nano-color-salient
                       :weight 'light)
+
+  (set-face-attribute 'nano-face-keyword nil
+                      :foreground nano-color-keyword)
+
+  (set-face-attribute 'nano-face-divider nil
+                      :foreground (face-background 'nano-face-subtle))
+
+  (set-face-attribute 'nano-face-type nil
+                      :foreground nano-color-type)
+
+  (set-face-attribute 'nano-face-function nil
+                      :foreground nano-color-function)
 
   (set-face-attribute 'nano-face-faded nil
                       :foreground nano-color-faded

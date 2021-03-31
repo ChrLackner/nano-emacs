@@ -46,6 +46,8 @@
     (strong . ,(face-foreground 'default nil t))
     (popout . ,(face-foreground 'font-lock-string-face nil t))
     (subtle . ,(face-background 'mode-line-inactive nil t))
+    (keyword .,(face-foreground 'font-lock-keyword-face nil t))
+    (type .,(face-foreground 'font-lock-type-face nil t))
     (faded . ,(face-foreground 'shadow nil t))))
 
 (defun nano-base-colors--get (name)
