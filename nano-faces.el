@@ -81,6 +81,9 @@ directory, etc."
 (defface nano-face-function nil
   "Type face."
   :group 'nano)
+(defface nano-face-variable nil
+  "Varible face."
+  :group 'nano)
 
 (defface nano-face-salient nil
   "Salient face is used for information that are important.
@@ -218,6 +221,8 @@ background color that is barely perceptible."
 
   (set-face-attribute 'nano-face-function nil
                       :foreground nano-color-function)
+  (set-face-attribute 'nano-face-variable nil
+                      :foreground nano-color-variable)
 
   (set-face-attribute 'nano-face-faded nil
                       :foreground nano-color-faded

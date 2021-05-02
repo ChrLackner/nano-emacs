@@ -33,6 +33,7 @@
   (setq nano-color-keyword    "#b48ead")
   (setq nano-color-type       "#a3be8c")
   (setq nano-color-function   "#88c0d0")
+  (setq nano-color-variable   "#ebcb8b")
   (setq nano-color-faded      "#677691") ;;
   (setq nano-color-error      "#bf616a")
   )
