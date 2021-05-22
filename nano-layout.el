@@ -16,6 +16,8 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 ;; ---------------------------------------------------------------------
 
+(require 'disp-table)
+
 (setq default-frame-alist
       (append (list
 	       '(font . "Roboto Mono:style=Light:size=20")
@@ -56,7 +58,7 @@
       inhibit-startup-message t
       inhibit-startup-echo-area-message t
       initial-scratch-message nil)
-(tool-bar-mode 0)
+(if (fboundp 'tool-bar-mode) (tool-bar-mode nil))
 (tooltip-mode 0)
 (menu-bar-mode 0)
 ;; (global-hl-line-mode 1)
