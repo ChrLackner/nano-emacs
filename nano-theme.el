@@ -544,7 +544,6 @@ function is a convenience wrapper used by `describe-package-1'."
     (set-face 'mu4e-highlight-face                    'nano-face-popout)
     (set-face 'mu4e-link-face                        'nano-face-salient)
     (set-face 'mu4e-modeline-face                      'nano-face-faded)
-    (set-face 'mu4e-moved-face                         'nano-face-faded)
     (set-face 'mu4e-ok-face                            'nano-face-faded)
     (set-face 'mu4e-region-code                        'nano-face-faded)
     (set-face 'mu4e-replied-face                     'nano-face-default)

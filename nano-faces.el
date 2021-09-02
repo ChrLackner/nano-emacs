@@ -215,7 +215,7 @@ background color that is barely perceptible."
                       :foreground nano-color-foreground
                       :background nano-color-background
                       :family     nano-font-family-monospaced
-                      :height       (* nano-font-size 10))
+                      :height       (* nano-font-size 11))
   (set-face-attribute 'nano-face-critical nil
                       :foreground nano-color-critical
                       :background nano-color-background
