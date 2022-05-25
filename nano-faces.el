@@ -48,7 +48,7 @@ Defaults to nil."
   :group 'nano
   :type 'string)
 
-(defcustom nano-font-size 9
+(defcustom nano-font-size 14
   "Default value for the font size of nano-theme in pt units.
 Note: to change this after startup, call
 \(nano-faces\) and \(nano-themes\)."
@@ -215,7 +215,7 @@ background color that is barely perceptible."
                       :foreground nano-color-foreground
                       :background nano-color-background
                       :family     nano-font-family-monospaced
-                      :height       (* nano-font-size 11))
+                      :height       (* nano-font-size 10))
   (set-face-attribute 'nano-face-critical nil
                       :foreground nano-color-critical
                       :background nano-color-background
