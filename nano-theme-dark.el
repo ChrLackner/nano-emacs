@@ -36,6 +36,8 @@
   (setq nano-color-variable   "#ebcb8b")
   (setq nano-color-faded      "#677691") ;;
   (setq nano-color-error      "#bf616a")
+  ;; to allow for toggling of the themes.
+  (setq nano-theme-var "dark")
   )
 
 (nano-theme-set-dark)
