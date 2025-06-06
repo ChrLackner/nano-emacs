@@ -28,8 +28,13 @@
   (setq nano-color-strong     "#000000") ;; Black
   (setq nano-color-popout     "#FFAB91") ;; Deep Orange / L200
   (setq nano-color-subtle     "#ECEFF1") ;; Blue Grey / L50
+  (setq nano-color-keyword    "#b48ead")
+  (setq nano-color-type       "#a3be8c")
+  (setq nano-color-function   "#88c0d0")
+  (setq nano-color-variable   "#ebcb8b")
   (setq nano-color-faded      "#B0BEC5") ;; Blue Grey / L200
   ;; to allow for toggling of the themes.
+  (setq nano-color-error      "#bf616a")
   (setq nano-theme-var "light")
   )
 
