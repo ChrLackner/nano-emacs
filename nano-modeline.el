@@ -62,7 +62,7 @@
          (space-down     -0.20)
          ;; Check for LSP breadcrumb availability
          (breadcrumb (if (bound-and-true-p lsp-mode)
-                         (lsp-headerline--build-symbol-string) ""))
+                                     (my-lsp-headerline--build-symbol-string) ""))
 	 (prefix (cond ((string= status "RO")
 			        (propertize (if (window-dedicated-p)" -- " " RO ")
                                 'face 'nano-face-header-popout))
@@ -79,8 +79,9 @@
                 (propertize name 'face 'nano-face-header-strong)
                 (propertize " "  'face 'nano-face-header-default
 			    'display `(raise ,space-down))
+		(propertize (concat primary " ") 'face 'nano-face-header-default)
                 breadcrumb
-		(propertize primary 'face 'nano-face-header-default)))
+                ))
          (right (concat secondary " "))
          (available-width (- (window-total-width) 
 			     (length prefix) (length left) (length right)
